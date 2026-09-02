@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery | ICGC The Harvest Temple</title>
+  <meta name="description" content="Browse photos from ICGC The Harvest Temple, Sunyani — worship services, fellowship, youth ministry, and community life.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-inner page-gallery">
+
+  <!-- Announcement Banner -->
+  <div class="announcement-bar" id="announcementBar">
+    <p>
+      Experience the life of our church — join us this Sunday at The Harvest Temple.
+      <a href="index.html#services">View service times &rarr;</a>
+    </p>
+    <button class="announcement-close" id="announcementClose" aria-label="Close announcement">&times;</button>
+  </div>
+
+  <!-- Navigation -->
+  <header class="site-header site-header--solid" id="siteHeader">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">ICGC</span>
+        <span class="logo-text">The Harvest Temple</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="pastor.html">Pastor</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#ministries">Ministries</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="index.html#contact" class="btn btn-gold btn-sm">Visit Us</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Cinematic Hero -->
+  <section class="gallery-hero">
+    <div class="gallery-hero-media" aria-hidden="true">
+      <img src="images/THT_132.jpg" alt="" class="gallery-hero-img">
+      <div class="gallery-hero-gradient"></div>
+    </div>
+    <div class="container gallery-hero-inner">
+      <div class="gallery-hero-text">
+        <p class="section-label">Life at The Harvest Temple</p>
+        <h1 class="gallery-hero-title">Moments of <em>Faith</em></h1>
+        <p class="gallery-hero-desc">Worship, fellowship, and community — captured in the life of our church family in Sunyani.</p>
+      </div>
+      <div class="gallery-hero-stats">
+        <div class="gallery-stat">
+          <span class="gallery-stat-number" id="galleryPhotoCount">5</span>
+          <span class="gallery-stat-label">Photos</span>
+        </div>
+        <div class="gallery-stat-divider"></div>
+        <div class="gallery-stat">
+          <span class="gallery-stat-number">3</span>
+          <span class="gallery-stat-label">Categories</span>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-hero-scroll">
+      <span>Explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section" id="galleryMain">
+    <div class="container">
+
+      <div class="gallery-toolbar">
+        <div class="gallery-toolbar-text">
+          <h2 class="gallery-section-title">Our <em>Gallery</em></h2>
+          <p class="gallery-section-desc">Click any photo to view it full size</p>
+        </div>
+        <div class="gallery-filters" role="tablist" aria-label="Filter gallery">
+          <button class="gallery-filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="gallery-filter" data-filter="worship" role="tab" aria-selected="false">Worship</button>
+          <button class="gallery-filter" data-filter="fellowship" role="tab" aria-selected="false">Fellowship</button>
+          <button class="gallery-filter" data-filter="community" role="tab" aria-selected="false">Community</button>
+        </div>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+
+        <figure class="gallery-item gallery-item--feature" data-category="worship" style="--delay: 0ms">
+          <button class="gallery-item-btn" data-index="0" aria-label="View praise and worship">
+            <div class="gallery-item-frame">
+              <img src="images/IMG_6157.jpg" alt="Congregation worshipping with hands raised" loading="lazy">
+              <div class="gallery-item-shine"></div>
+              <div class="gallery-item-overlay">
+                <span class="gallery-item-index">01</span>
+                <div class="gallery-item-info">
+                  <span class="gallery-item-tag">Worship</span>
+                  <h3 class="gallery-item-title">Praise &amp; Worship</h3>
+                  <p class="gallery-item-desc">Raising hearts and voices to the Lord every Sunday</p>
+                </div>
+                <span class="gallery-item-action">
+                  View Photo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </button>
+        </figure>
+
+        <figure class="gallery-item gallery-item--tall" data-category="worship" style="--delay: 80ms">
+          <button class="gallery-item-btn" data-index="1" aria-label="View Sunday service">
+            <div class="gallery-item-frame">
+              <img src="images/GRADUATION-THT_85.jpg" alt="Sunday worship service at The Harvest Temple" loading="lazy">
+              <div class="gallery-item-shine"></div>
+              <div class="gallery-item-overlay">
+                <span class="gallery-item-index">02</span>
+                <div class="gallery-item-info">
+                  <span class="gallery-item-tag">Worship</span>
+                  <h3 class="gallery-item-title">Sunday Service</h3>
+                </div>
+                <span class="gallery-item-action">
+                  View Photo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </button>
+        </figure>
+
+        <figure class="gallery-item" data-category="community" style="--delay: 160ms">
+          <button class="gallery-item-btn" data-index="2" aria-label="View youth worship">
+            <div class="gallery-item-frame">
+              <img src="images/IMG_6285.jpg" alt="Youth worship and praise" loading="lazy">
+              <div class="gallery-item-shine"></div>
+              <div class="gallery-item-overlay">
+                <span class="gallery-item-index">03</span>
+                <div class="gallery-item-info">
+                  <span class="gallery-item-tag">Community</span>
+                  <h3 class="gallery-item-title">Harvest Children</h3>
+                </div>
+                <span class="gallery-item-action">
+                  View Photo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </button>
+        </figure>
+
+        <figure class="gallery-item gallery-item--wide" data-category="fellowship" style="--delay: 240ms">
+          <button class="gallery-item-btn" data-index="3" aria-label="View congregation fellowship">
+            <div class="gallery-item-frame">
+              <img src="images/GRADUATION-THT_132.jpg" alt="Church congregation in worship" loading="lazy">
+              <div class="gallery-item-shine"></div>
+              <div class="gallery-item-overlay">
+                <span class="gallery-item-index">04</span>
+                <div class="gallery-item-info">
+                  <span class="gallery-item-tag">Fellowship</span>
+                  <h3 class="gallery-item-title">Our Congregation</h3>
+                </div>
+                <span class="gallery-item-action">
+                  View Photo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </button>
+        </figure>
+
+        <figure class="gallery-item gallery-item--wide gallery-item--full" data-category="fellowship" style="--delay: 320ms">
+          <button class="gallery-item-btn" data-index="4" aria-label="View pastoral ministry">
+            <div class="gallery-item-frame">
+              <img src="images/GRADUATION-THT_111.jpg" alt="Pastoral ministry at The Harvest Temple" loading="lazy">
+              <div class="gallery-item-shine"></div>
+              <div class="gallery-item-overlay">
+                <span class="gallery-item-index">05</span>
+                <div class="gallery-item-info">
+                  <span class="gallery-item-tag">Fellowship</span>
+                  <h3 class="gallery-item-title">Ministry &amp; Leadership</h3>
+                </div>
+                <span class="gallery-item-action">
+                  View Photo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </button>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="gallery-cta-banner">
+    <div class="gallery-cta-bg" aria-hidden="true">
+      <img src="images/THT_132.jpg" alt="">
+    </div>
+    <div class="gallery-cta-overlay"></div>
+    <div class="container gallery-cta-inner">
+      <p class="section-label">Join Us</p>
+      <h2 class="gallery-cta-title">Be Part of the <em>Story</em></h2>
+      <p class="gallery-cta-text">Every Sunday is an opportunity to worship, connect, and grow. We'd love to welcome you home.</p>
+      <div class="gallery-cta-actions">
+        <a href="index.html#contact" class="btn btn-gold">Plan Your Visit</a>
+        <a href="index.html#services" class="btn btn-outline">Service Times</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+    <div class="lightbox-layout">
+      <div class="lightbox-image-wrap">
+        <img src="" alt="" id="lightboxImage" class="lightbox-image">
+      </div>
+      <div class="lightbox-sidebar">
+        <span class="lightbox-tag" id="lightboxTag"></span>
+        <h3 id="lightboxTitle"></h3>
+        <p class="lightbox-desc" id="lightboxDesc"></p>
+        <span class="lightbox-counter" id="lightboxCounter"></span>
+        <div class="lightbox-thumbs" id="lightboxThumbs"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-mark">ICGC</span>
+            <span class="logo-text">The Harvest Temple</span>
+          </a>
+          <p>Raising leaders, shaping vision, and influencing society through Christ.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="pastor.html">Our Pastor</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#events">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="tel:+233206153855">+233 20 615 3855</a></li>
+            <li><a href="https://centralgospel.com" target="_blank" rel="noopener">ICGC Headquarters</a></li>
+            <li><a href="index.html#contact">Directions</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ICGC The Harvest Temple, Sunyani. All rights reserved.</p>
+        <p>Part of the <a href="https://centralgospel.com" target="_blank" rel="noopener">International Central Gospel Church</a> network.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
