@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICGC The Harvest Temple | Sunyani, Ghana</title>
+  <meta name="description" content="International Central Gospel Church — The Harvest Temple, Sunyani. A vibrant community raising leaders, shaping vision, and influencing society through Christ.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Banner -->
+  <div class="announcement-bar" id="announcementBar">
+    <p>
+      Join us every Sunday for worship at The Harvest Temple, Sunyani.
+      <a href="#services">View service times &rarr;</a>
+    </p>
+    <button class="announcement-close" id="announcementClose" aria-label="Close announcement">&times;</button>
+  </div>
+
+  <!-- Navigation -->
+  <header class="site-header site-header--over-hero" id="siteHeader">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">ICGC</span>
+        <span class="logo-text">The Harvest Temple</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="pastor.html">Pastor</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#ministries">Ministries</a></li>
+        <li><a href="#prayer">Prayer</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-gold btn-sm">Visit Us</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Slider -->
+  <section class="hero-slider" id="hero" aria-label="Featured services">
+    <div class="slider-track" id="sliderTrack">
+
+      <article class="slide active" data-slide="0">
+        <img src="images/slide1.jpg" alt="Congregation worshipping together" class="slide-bg">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <p class="section-label slide-label">International Central Gospel Church</p>
+          <h1 class="slide-title">
+            <span class="slide-line">The</span>
+            <span class="slide-line slide-line-accent">Harvest</span>
+            <span class="slide-line">Temple</span>
+          </h1>
+          <p class="slide-text">A vibrant church in Sunyani, Ghana. Raising leaders, shaping vision, and influencing society through Christ.</p>
+          <div class="slide-actions">
+            <a href="#services" class="btn btn-gold">Join Us This Sunday</a>
+            <a href="#about" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="1">
+        <img src="images/slide2.jpg" alt="Sunday worship service" class="slide-bg">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <p class="section-label slide-label">Every Sunday</p>
+          <h2 class="slide-title slide-title-sm">Sunday Service</h2>
+          <p class="slide-time">8:00 AM &mdash; 11:00 AM</p>
+          <p class="slide-text">Experience uplifting praise, inspiring messages, and genuine fellowship every Sunday morning at The Harvest Temple.</p>
+          <a href="#contact" class="btn btn-gold">Plan Your Visit</a>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="2">
+        <img src="images/slide3.jpg" alt="Youth and students worship" class="slide-bg">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <p class="section-label slide-label">Youth &amp; Students</p>
+          <h2 class="slide-title slide-title-sm">Harvest Youth</h2>
+          <p class="slide-time">Sundays &middot; During Main Service</p>
+          <p class="slide-text">Dynamic worship and teaching for the next generation. Empowering youth to live boldly for Christ through discipleship and fellowship.</p>
+          <a href="#ministries" class="btn btn-gold">Youth Ministry</a>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="3">
+        <img src="images/gallery2.jpg" alt="Midweek Bible study and prayer" class="slide-bg">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <p class="section-label slide-label">Midweek</p>
+          <h2 class="slide-title slide-title-sm">Bible Study &amp; Prayer</h2>
+          <p class="slide-time">Wednesday &middot; 6:00 PM &mdash; 8:00 PM</p>
+          <p class="slide-text">Midweek Bible study and prayer for spiritual growth and renewal. We welcome you to be part of us.</p>
+          <a href="#services" class="btn btn-gold">All Services</a>
+        </div>
+      </article>
+
+    </div>
+
+    <button class="slider-arrow slider-prev" id="sliderPrev" aria-label="Previous slide">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button class="slider-arrow slider-next" id="sliderNext" aria-label="Next slide">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+
+    <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Slide navigation">
+      <button class="slider-dot active" data-index="0" aria-label="Slide 1" aria-selected="true"></button>
+      <button class="slider-dot" data-index="1" aria-label="Slide 2" aria-selected="false"></button>
+      <button class="slider-dot" data-index="2" aria-label="Slide 3" aria-selected="false"></button>
+      <button class="slider-dot" data-index="3" aria-label="Slide 4" aria-selected="false"></button>
+    </div>
+
+    <div class="slider-progress"><div class="slider-progress-bar" id="sliderProgress"></div></div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <p class="section-label">About</p>
+          <h2 class="section-title">A Spiritual <em>Home</em> in Sunyani</h2>
+          <div class="about-text">
+            <p>
+              ICGC The Harvest Temple is a remarkable church situated in the heart of
+              Sunyani, Ghana. This spiritual sanctuary stands out for its impressive
+              architecture and the warmth and hospitality of its congregation.
+            </p>
+            <p>
+              As part of the International Central Gospel Church network under the
+              leadership of <strong>Dr. Mensa Otabil</strong>, our mission is to raise
+              leaders, shape vision, and influence society through Christ. We are an
+              Evangelical, charismatic Christian church focused on developing an
+              atmosphere where people feel free, safe, loved, and honored.
+            </p>
+            <p>
+              Inside, the ambiance is peaceful — an ideal place for reflection,
+              worship, and fellowship. On Sundays, our services are filled with
+              uplifting music and powerful preaching that reflects the joyous spirit
+              of our community.
+            </p>
+          </div>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <div class="about-visual">
+          <div class="about-image-frame">
+            <img src="images/about.jpg" alt="The Harvest Temple church">
+          </div>
+          <div class="about-badge">
+            <span class="about-badge-number">ICGC</span>
+            <span class="about-badge-text">Network of Churches Worldwide</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section stats-section">
+    <div class="container">
+      <p class="section-label text-center">The impact of a faithful community</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number" data-count="15">0</span>
+          <span class="stat-suffix">+</span>
+          <span class="stat-label">Years of Ministry</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="8">0</span>
+          <span class="stat-label">Active Ministries</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="500">0</span>
+          <span class="stat-suffix">+</span>
+          <span class="stat-label">Church Members</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="3">0</span>
+          <span class="stat-label">Weekly Services</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="1">0</span>
+          <span class="stat-label">Mission: Transform Sunyani</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="100">0</span>
+          <span class="stat-suffix">%</span>
+          <span class="stat-label">Committed to Christ</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="services-header">
+        <div>
+          <p class="section-label">Worship With Us</p>
+          <h2 class="section-title">Experience the <em>Power</em> of God</h2>
+        </div>
+        <p class="services-intro">
+          Join our vibrant congregation for uplifting worship, powerful preaching,
+          and genuine fellowship every week at The Harvest Temple.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card featured">
+          <div class="service-day">Sunday</div>
+          <h3 class="service-name">Main Service</h3>
+          <p class="service-time">8:00 AM &mdash; 11:00 AM</p>
+          <p class="service-desc">Our flagship worship experience with praise, worship, and the Word of God.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-day">Sunday</div>
+          <h3 class="service-name">Children's Church</h3>
+          <p class="service-time">8:00 AM &mdash; 11:00 AM</p>
+          <p class="service-desc">Age-appropriate Bible lessons and activities for our young ones.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-day">Wednesday</div>
+          <h3 class="service-name">Midweek Service</h3>
+          <p class="service-time">6:00 PM &mdash; 8:00 PM</p>
+          <p class="service-desc">Midweek Bible study and prayer for spiritual growth and renewal.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-day">Friday</div>
+          <h3 class="service-name">Prayer Meeting</h3>
+          <p class="service-time">6:00 AM &mdash; 7:30 AM</p>
+          <p class="service-desc">Early morning intercession — there's power in united prayer!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ministries Section -->
+  <section class="section ministries-section" id="ministries">
+    <div class="container">
+      <p class="section-label text-center">Get Involved</p>
+      <h2 class="section-title text-center">Our <em>Ministries</em></h2>
+      <p class="section-desc text-center">
+        Discover ways to serve, grow, and connect with our church family.
+      </p>
+      <div class="ministries-grid">
+        <div class="ministry-card">
+          <div class="ministry-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Youth Ministry</h3>
+          <p>Empowering the next generation to live boldly for Christ through discipleship and fellowship.</p>
+        </div>
+        <div class="ministry-card">
+          <div class="ministry-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Women's Fellowship</h3>
+          <p>A community of women growing in faith, supporting one another, and impacting families.</p>
+        </div>
+        <div class="ministry-card">
+          <div class="ministry-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Men's Ministry</h3>
+          <p>Building godly men who lead with integrity in their homes, workplaces, and community.</p>
+        </div>
+        <div class="ministry-card">
+          <div class="ministry-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <h3>Bible Study</h3>
+          <p>Deep biblical teaching that equips believers with knowledge and practical ministry skills.</p>
+        </div>
+        <div class="ministry-card">
+          <div class="ministry-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </div>
+          <h3>Praise &amp; Worship</h3>
+          <p>An anointed team leading the congregation into the presence of God through music.</p>
+        </div>
+        <div class="ministry-card">
+          <div class="ministry-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Outreach &amp; Missions</h3>
+          <p>Reaching the lost and serving the community through evangelism and humanitarian work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prayer Section -->
+  <section class="section prayer-section" id="prayer">
+    <div class="prayer-bg"></div>
+    <div class="container">
+      <div class="prayer-content">
+        <p class="section-label">Prayer</p>
+        <h2 class="section-title">There's <em>Power</em> Here!</h2>
+        <p class="prayer-text">
+          Join believers at The Harvest Temple in prayer meetings that will change
+          your life. We believe in the power of united prayer to transform individuals,
+          families, and our community in Sunyani.
+        </p>
+        <div class="prayer-schedule">
+          <div class="prayer-item">
+            <span class="prayer-day">Friday</span>
+            <span class="prayer-time">6:00 AM &mdash; 7:30 AM</span>
+          </div>
+          <div class="prayer-item">
+            <span class="prayer-day">Wednesday</span>
+            <span class="prayer-time">6:00 PM &mdash; 8:00 PM</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-gold">Join a Prayer Meeting</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="section events-section" id="events">
+    <div class="container">
+      <p class="section-label">Upcoming Events &amp; Programs</p>
+      <h2 class="section-title">What's <em>Coming Up</em></h2>
+      <div class="events-grid">
+        <article class="event-card">
+          <div class="event-date">
+            <span class="event-month">Every</span>
+            <span class="event-day">Sun</span>
+          </div>
+          <div class="event-details">
+            <h3>Sunday Worship Service</h3>
+            <p>Join us for praise, worship, and the Word every Sunday morning at The Harvest Temple.</p>
+            <span class="event-meta">8:00 AM &mdash; 11:00 AM &middot; Main Auditorium</span>
+          </div>
+        </article>
+        <article class="event-card">
+          <div class="event-date">
+            <span class="event-month">Every</span>
+            <span class="event-day">Wed</span>
+          </div>
+          <div class="event-details">
+            <h3>Midweek Bible Study</h3>
+            <p>Deep dive into Scripture with practical teachings for everyday Christian living.</p>
+            <span class="event-meta">6:00 PM &mdash; 8:00 PM &middot; Church Premises</span>
+          </div>
+        </article>
+        <article class="event-card">
+          <div class="event-date">
+            <span class="event-month">Annual</span>
+            <span class="event-day">Dec</span>
+          </div>
+          <div class="event-details">
+            <h3>Harvest Convention</h3>
+            <p>Our annual gathering — a time of celebration, renewal, and powerful encounters with God.</p>
+            <span class="event-meta">December &middot; The Harvest Temple, Sunyani</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section class="section resources-section" id="resources">
+    <div class="container">
+      <p class="section-label text-center">Ministry Resources</p>
+      <h2 class="section-title text-center">Books &middot; Videos &middot; Audio &middot; Music</h2>
+      <div class="resources-grid">
+        <a href="https://centralgospel.com" target="_blank" rel="noopener" class="resource-card">
+          <h3>ICGC Official</h3>
+          <p>Visit the International Central Gospel Church headquarters website for news and updates.</p>
+          <span class="resource-link">centralgospel.com &rarr;</span>
+        </a>
+        <a href="https://centralgospel.com/mensa-otabil/" target="_blank" rel="noopener" class="resource-card">
+          <h3>Dr. Mensa Otabil</h3>
+          <p>Learn about our General Overseer — theologian, author, and visionary leader.</p>
+          <span class="resource-link">Read Biography &rarr;</span>
+        </a>
+        <a href="https://www.youtube.com/results?search_query=ICGC+sermons" target="_blank" rel="noopener" class="resource-card">
+          <h3>Sermons &amp; Teachings</h3>
+          <p>Watch life-changing messages from ICGC pastors and leaders around the world.</p>
+          <span class="resource-link">Watch on YouTube &rarr;</span>
+        </a>
+        <a href="https://www.youtube.com/results?search_query=ICGC+worship" target="_blank" rel="noopener" class="resource-card">
+          <h3>Worship Music</h3>
+          <p>Scriptural music that glorifies Jesus and draws hearts closer to Him.</p>
+          <span class="resource-link">Listen Now &rarr;</span>
+        </a>
+        <a href="https://centralgospel.com" target="_blank" rel="noopener" class="resource-card">
+          <h3>Devotionals</h3>
+          <p>Daily devotionals and Bible reading plans to strengthen your walk with God.</p>
+          <span class="resource-link">Start Reading &rarr;</span>
+        </a>
+        <a href="https://centralgospel.com" target="_blank" rel="noopener" class="resource-card">
+          <h3>Give Online</h3>
+          <p>Support the work of the ministry through tithes, offerings, and special gifts.</p>
+          <span class="resource-link">Give Now &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="section-label">Visit Us</p>
+          <h2 class="section-title">Come <em>Home</em> to The Harvest Temple</h2>
+          <p class="contact-desc">
+            Whether you're visiting Sunyani or looking for a church home, we'd love
+            to welcome you. Our doors are open to everyone seeking God.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Address</strong>
+                <p>Near Jubilee Park, Sunyani<br>Bono Region, Ghana</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:+233206153855">+233 20 615 3855</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <div>
+                <strong>Service Times</strong>
+                <p>Sunday: 8:00 AM &mdash; 11:00 AM<br>Wednesday: 6:00 PM &mdash; 8:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5!2d-2.326!3d7.339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMjAnMjAuNCJOIDLCsDE5JzMzLjYiVw!5e0!3m2!1sen!2sgh!4v1"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="ICGC The Harvest Temple location map">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-mark">ICGC</span>
+            <span class="logo-text">The Harvest Temple</span>
+          </a>
+          <p>Raising leaders, shaping vision, and influencing society through Christ.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="pastor.html">Our Pastor</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#ministries">Ministries</a></li>
+            <li><a href="#events">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="tel:+233206153855">+233 20 615 3855</a></li>
+            <li><a href="https://centralgospel.com" target="_blank" rel="noopener">ICGC Headquarters</a></li>
+            <li><a href="#contact">Directions</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ICGC The Harvest Temple, Sunyani. All rights reserved.</p>
+        <p>Part of the <a href="https://centralgospel.com" target="_blank" rel="noopener">International Central Gospel Church</a> network.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
